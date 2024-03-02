@@ -1,6 +1,7 @@
 const express = require('express');
 const User = require('../models/User');
 const app = express.Router();
+app.use(express.json());
 
 //Authentification
 app.post('/login', async (req, res) => {

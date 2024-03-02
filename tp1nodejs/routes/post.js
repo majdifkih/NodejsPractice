@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express.Router();
 const Post=require('../models/post');
-
+app.use(express.json());
 // cree un post
 app.post('/addpost', async (req, res) => {
     try {
